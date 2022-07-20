@@ -1,0 +1,14 @@
+{
+  "name": "Desiree Cardinal",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "description": "Desiree Cardinal: bleeding-edge JavaScript, OSS, GT '2022",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
