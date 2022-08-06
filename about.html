@@ -6,18 +6,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="manifest" href="manifest.json">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-	<meta name="description" content="Daniel Hsing: GT'22, bleeding-edge JavaScript, OSS" />
-	<meta name="keywords" content="daniel hsing personal hackathon student" />
+	<meta name="description" content="Desiree Cardinal: GT'21, bleeding-edge JavaScript, OSS" />
+	<meta name="keywords" content="desiree cardinal personal graduate" />
 	<meta name="language" content="en-us" />
 	<meta name="distribution" content="Global" />
 	<meta name="rating" content="General" />
-	<meta name="creator" content="Daniel Hsing" />
+	<meta name="creator" content="Desiree Cardinal" />
 
 
-
-	<title>About - Desiree Cardinal</title>
+	<title>Desiree Cardinal - About</title>
 	<link rel="icon" href="favicon.png ">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
 	<style>
 		a.class1 {
 			color: blue;
@@ -57,23 +57,6 @@
 		.container {
 			padding: 1em 12em;
 		}
-
-		@media(max-width: 1024px) {
-			.container {
-				padding: 1em 6em 1em 6em;
-			}
-
-			body {
-				font-size: 1.1em;
-			}
-		}
-
-		@media(max-width: 430px) {
-			.container {
-				padding: 0.5em 2em;
-			}
-		}
-
 		#about {
 			margin-top: 2em;
 		}
@@ -89,19 +72,53 @@
 			color: gray;
 		}
 
-		/* Create two equal columns that floats next to each other */
-		.column {
-			
-			float: left;
-			width: 50%;
-	
+		#about h4 {
+			margin-top: 0.5em;
+			padding-bottom: 10px;
+			font-size: 28px;
 		}
 
+		.column1 {
+			float: left;
+			width: 30%;
+		}
+		.column2 {
+			float: left;
+			width: 70%;
+	
+		}
+		.img {
+			width:65%;
+		}
 		/* Clear floats after the columns */
 		.row:after {
 			content: "";
 			display: table;
 			clear: both;
+		}
+
+		@media(max-width: 1024px) {
+			.container {
+				padding: 1em 6em 1em 6em;
+			}
+			body {
+				font-size: 1.1em;
+			}
+		}
+		@media screen and (max-width: 650px) {
+			.container {
+				padding: 0.5em 2em;
+			}
+			.column1 {
+				width: 100%;
+				text-align: center;
+			}
+			.column2 {
+				width: 100%;
+			}
+			.img{
+				width: 40%;	
+			}
 		}
 		.wave {
 			animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -110,7 +127,9 @@
 			transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
 			display: inline-block;
 		}
-		
+		.blue-text {
+			color: cornflowerblue
+		}
 		@keyframes wave-animation {
 			0% { transform: rotate( 0.0deg) }
 			10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
@@ -133,19 +152,15 @@
 				<br />
 				<br />
 				<div class="row">
-					<div class="column" style=" width: 30%;">
+					<div class="column1">
 					  <br />
-					  
-					  <img src="dc_image.png" alt="Desiree" style="width:80%;">
-					  <br />
-					  <br />
+					  <img class="img" src="dc_image.png" alt="Desiree">
+	
 					
 					</div>
-					<div class="column" style=" width: 70%;">
-					
-					  <h3>Hi! <span class="wave">👋</span> </h3>
-					  <h2>I'm 
-						<span style="color:cornflowerblue">Desiree</span></h2>
+					<div class="column2">
+						<h3>Hi! <span class="wave">👋</span> </h3>
+						<h4>I'm <span class="blue-text">Desiree</span></h4>
 					
 						<p>I have a passion for UX research and computer science.
 						I frequently attend local hackathons, contribute
@@ -157,9 +172,12 @@
 						the dots between technical constraints, business goals, and human behavior. 
 						I use research to inform design decisions that bring simplicity, empowerment,
 						and joy into people's lives.
+
+						I was featured in my university's showcase on Women in Stem, read about it here!
+
 						<br />
-						<br />
-						<a href="mailto:dcardinal52@gmail.com" style="color: blue" class="class2">dcardinal52@gmail.com</a>
+						<h3>send me a message!
+						 <a href="mailto:dcardinal52@gmail.com" style="color: blue" class="class2">&nbsp ✉️</a> </h3>
 
 					</p> 
 					</div>
