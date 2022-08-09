@@ -32,14 +32,7 @@
 
     <style>
 
-    span {
-      animation: blinker 1.2s linear infinite;
-    }
-    @keyframes blinker {
-      50%{
-        opacity: 0;
-      }
-    }
+  
 
     </style>
   </head>
@@ -55,66 +48,51 @@
 
 </div> -->
 
-
-
   <body>
 
     <!-- Create Menu -->
       <div class="container" id="header">
-      <h1 id="message"></h1>
+      <h1 id="message", style="color:transparent"></h1>
 
       <script src="Typewriter.js"></script>
   
       <div id="links">
-        <a href="about.html">about</a>
+        <a href="index.html">projects</a>
         <a href="resume.pdf">resume</a>
       </div>
     </div>
     
-
-    <div class="container" id="projects">
-      <h2>UX Research / Design</h2>
-      <p>
-        <a href="https://solutionallyspeaking.com"><u>Solutionally Speaking</u> </a> <br>
-        A wordpress website designed for insight and engagement.
-      </p>
-      <p>
-        <a href="cityhive.html"><u>Usability Report</u></a> <br>
-        A study on usability and emotional design. 
-      </p>
-   
-
-      <h2>Other Projects</h2>
-      <p>
-        <a href="https://github.com/cardinald/effects-of-climate-change"> <u>The Effects of Climate Change</u></a> <br>
-        An interactive dashboard exploring climate change and its effects.
-      </p>
+    <div class="container" id="about">
+      <div class="row">
+        <div class="column1">
+          <img class="img" src="dc_image.png" alt="Desiree">
+        </div>
+            
+        <div class="column2">
+          <h3>Hi! <span class="wave">👋</span> </h3>
+          <h4>I'm <span class="blue-text">Desiree</span></h4>
+          
+          <p> I have a passion for UX research and computer science.
+          I frequently attend local hackathons, contribute
+          to open source, and enjoy diving deep into learning new tools/skills.
+          <br />
+          <br />
+          Coming from a computer science background, I am constantly inquisitive
+          about the why and hows of decisions made by people. I love connecting
+          the dots between technical constraints, business goals, and human behavior. 
+          I use research to inform design decisions that bring simplicity, empowerment,
+          and joy into people's lives.
   
-  
+          I was featured in my university's showcase on Women in Stem, read about it here!
+          <br />
+          
+          <h3>send me a message! &nbsp <a href="mailto:dcardinal52@gmail.com"> ✉️</a> </h3>
+        
+          </p> 
+        </div>
+      </div>
+
     </div>
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      );
 
-      ga("create", "UA-88089392-1", "auto");
-      ga("send", "pageview");
-    </script>
   </body>
 </html>

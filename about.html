@@ -19,14 +19,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
 	<style>
-		a.class1 {
-			color: blue;
-			text-decoration: none;
-		}
-		a.class2{
-			color: black;
-			text-decoration: none;
-		}
+	a {
+		color: blue;
+        text-decoration: none;
+      }
+
+      a:hover {
+        border-bottom: 0.1px solid blue;
+        cursor: pointer;
+      }
+
 		a:hover {
 			border-bottom: 0.1px solid blue;
 			color: blue;
@@ -140,13 +142,33 @@
 			60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
 			100% { transform: rotate( 0.0deg) }
 		}
+		#links {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+      }
+	  #links a {
+        margin-right: 1em;
+      }
+	  #header {
+          display: block !important;
+        }
+
+      #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+      }
   
 	</style>
 </head>
 
 <body>
+	
 	<div class="container" id="about">
-		<a href="index.html" class="class1">
+	
+		<a href="index.html" >
 			<-- back</a>
 	
 				<br />
@@ -176,8 +198,8 @@
 						I was featured in my university's showcase on Women in Stem, read about it here!
 
 						<br />
-						<h3>send me a message!
-						 <a href="mailto:dcardinal52@gmail.com" style="color: blue" class="class2">&nbsp ✉️</a> </h3>
+						<h3>send me a message! &nbsp
+						 <a href="mailto:dcardinal52@gmail.com"> ✉️</a> </h3>
 
 					</p> 
 					</div>
