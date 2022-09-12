@@ -30,8 +30,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
 
-    <style>
 
+    <style>
+    
     span {
       animation: blinker 1.2s linear infinite;
     }
@@ -40,6 +41,26 @@
         opacity: 0;
       }
     }
+    
+    img {
+      position: fixed;
+      display: none;
+      pointer-events: none;
+      background-color: white;
+      border: 1px solid gray;
+      padding: 6px;
+      width: 340px;
+    }
+    .subtitle {
+  color: white;
+  width: 100%;
+  height: 30%;
+  position:absolute;
+  bottom:0%;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+}
+
 
     </style>
   </head>
@@ -55,7 +76,36 @@
 
 </div> -->
 
+<script>
+let attached = false;
 
+const getElmtImage = (elmt) => {
+  return elmt.querySelector("img")
+}
+
+const followMouse = (elmt, event) => {
+  elmt.style.left = (event.x+20) + "px";
+  elmt.style.top = (event.y-10) + "px";
+}
+
+function showImage(elmt) {
+  const image = getElmtImage(elmt)
+  if (!attached) {
+    attached = true;
+    image.style.display = "block";
+    document.addEventListener("pointermove", function(event) {
+      followMouse(image, event)
+    });
+  }
+}
+function hideImage(elmt) {
+  const image = getElmtImage(elmt)
+  attached = false;
+  image.style.display = "none";
+  document.removeEventListener("pointermove", followMouse);
+}
+
+</script>
 
   <body>
 
@@ -74,25 +124,40 @@
 
     <div class="container" id="projects">
       <h2>UX Research / Design</h2>
-      <p>
-        <a href="https://solutionallyspeaking.com"><u>Solutionally Speaking</u> </a> <br>
-        A wordpress website designed for insight and engagement.
-      </p>
-      <p>
-        <a href="cityhive.html"><u>Usability Report</u></a> <br>
+
+      <p style="padding-bottom: 10px;">
+        <a href="cityhive.html" onpointerenter="showImage(this)" onpointerleave="hideImage(this)">
+           <u>Usability Report</u>
+          <img src="https://loremflickr.com/320/240" /></a><br>
         A study on usability and emotional design. 
+      </p>
+
+      <p style="padding-bottom: 10px;">
+        <a href="https://solutionallyspeaking.com" onpointerenter="showImage(this)" onpointerleave="hideImage(this)">
+        <u>Solutionally Speaking</u>
+        <img src="sol_speaking.png" /></a><br>
+        A wordpress website designed for insight and engagement.
       </p>
    
 
       <h2>Other Projects</h2>
-      <p>
-        <a href="https://github.com/cardinald/effects-of-climate-change"> <u>The Effects of Climate Change</u></a> <br>
+
+      <p style="padding-bottom: 10px;">
+        <a href="https://github.com/cardinald/effects-of-climate-change" onpointerenter="showImage(this)" onpointerleave="hideImage(this)">
+        <u>The Effects of Climate Change</u>
+        <img src="dashboard.png" /></a><br>
         An interactive dashboard exploring climate change and its effects.
       </p>
-  
-  
+
+      </br>
+      </br>
+
     </div>
-    <script>
+
+
+
+<script>
+
       (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
         (i[r] =

@@ -23,7 +23,9 @@ h1 {
     padding-top: 20px;
     margin-top: 0;
   }
-  h2,
+  h2{
+    padding-bottom: 4px;
+  }
   h3,
 h4 {
     font-weight: normal;
@@ -41,7 +43,7 @@ p {
         font-family: "Lato", monospace;
         overflow-wrap: break-word;
         padding-bottom: 1.5em;
-        padding-top: 1.5em;
+        padding-top: 2em;
     }
 
     .container {
