@@ -33,6 +33,7 @@
 
     <style>
     
+
     span {
       animation: blinker 1.2s linear infinite;
     }
@@ -59,6 +60,26 @@
   bottom:0%;
   background: rgba(0,0,0,0.5);
   text-align: center;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Lato', monospace;
+}
+
+.container:hover .overlay {
+  opacity: 1;
 }
 
 
@@ -142,10 +163,16 @@ function hideImage(elmt) {
 
       <h2>Other Projects</h2>
 
+      
       <p style="padding-bottom: 10px;">
-        <a href="https://github.com/cardinald/effects-of-climate-change" onpointerenter="showImage(this)" onpointerleave="hideImage(this)">
+
+        <a href="dashboard.html" onpointerenter="showImage(this)" onpointerleave="hideImage(this)" >
         <u>The Effects of Climate Change</u>
-        <img src="dashboard.png" /></a><br>
+        
+        <img src="dashboard.png" title="hover text"/> </a><br>
+       
+
+
         An interactive dashboard exploring climate change and its effects.
       </p>
 
@@ -153,7 +180,6 @@ function hideImage(elmt) {
       </br>
 
     </div>
-
 
 
 <script>
