@@ -33,15 +33,6 @@
 
     <style>
     
-
-    span {
-      animation: blinker 1.2s linear infinite;
-    }
-    @keyframes blinker {
-      50%{
-        opacity: 0;
-      }
-    }
     
     img {
       position: fixed;
@@ -81,7 +72,6 @@
 .container:hover .overlay {
   opacity: 1;
 }
-
 
     </style>
   </head>
@@ -130,11 +120,19 @@ function hideImage(elmt) {
 
   <body>
 
+    <!--data-type='[ "Hi, I&#39m Desiree.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>-->
     <!-- Create Menu -->
       <div class="container" id="header">
-      <h1 id="message"></h1>
 
-      <script src="Typewriter.js"></script>
+        <div>
+        <h1>
+          <a href="" style="color: black" class="Typewrite" data-period="2000" data-type='[ "Desiree Cardinal"]'>
+            <span class="wrap"></span>
+          </a>
+        </h1>
+      <script src="Typewrite.js"></script> 
+        </div>
+
   
       <div id="links">
         <a href="about.html">about</a>
